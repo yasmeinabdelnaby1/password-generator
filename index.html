@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Password Generator With Options</h1>
+  <div class="container">
+    <div class="options">
+      <label>
+        Password Length
+        <input class="pass-length" type="text" id="length" value="10" placeholder="Password Length {1, 32}" />
+      </label>
+      <label for="include-numbers">
+        Numbers
+        <input type="checkbox" id="include-numbers" checked />
+      </label>
+      <label for="include-special">
+        Special Chars
+        <input type="checkbox" id="include-special" checked />
+      </label>
+    </div>
+    <button class="generate" id="generate">Generate Password</button>
+    <div id="password" class="result">Password Will Appear Here</div>
+    <h3>Latest 10 Generated Passwords</h3>
+    <div id="saved-passwords" class="saved-passwords">Passwords Will Show Here</div>
+
+    <div id="password" class="password-result"></div>
+
+    <div class="password-strength-container">
+      <div class="strength-bar">
+        <div id="strength-bar" class="strength-progress"></div>
+      </div>
+      <div id="password-strength" class="strength-text">Strength: </div>
+    </div>
+    <div class="delete-all-container">
+      <button id="delete-all-btn" class="delete-all-btn">
+        🗑️ Delete All Passwords
+      </button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
