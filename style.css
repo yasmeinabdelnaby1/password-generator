@@ -1,0 +1,195 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #eee;
+  margin: 0;
+}
+h1 {
+  padding: 20px;
+  margin: 0 0 20px;
+  background-color: white;
+  text-align: center;
+}
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.options {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.options label {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+}
+.options label:not(:last-child) {
+  border-right: 1px solid #6931eb;
+}
+.options label:hover {
+  background-color: #f9f9f9;
+}
+.options label input[type="text"] {
+  width: 100%;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px auto 0;
+  height: 35px;
+}
+.options label input[type="text"]:focus {
+  outline: none;
+}
+.options label input[type="checkbox"] {
+  width: 35px;
+  height: 35px;
+  display: block;
+  margin: 20px auto 0;
+  accent-color: #6931eb;
+}
+.generate {
+  background-color: #6931eb;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+.generate:hover {
+  background-color: #360e94;
+}
+.result {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px dashed #6729f8;
+  text-align: center;
+  font-size: 30px;
+}
+.result + h3 {
+  text-align: center;
+  padding: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+.saved-passwords {
+    background-color: #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+.saved-passwords > div {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.saved-passwords > div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+.delete-btn{
+margin-left: auto;
+  width: 60px;
+  height: 30px;
+  border: none;
+  background-color: rgb(243, 7, 7);
+  color: white;
+  font-size: 15px;
+  border-radius: 40px;
+}
+.delete-btn:hover{
+  background-color: rgb(212, 8, 8);
+  font-size: 15px;
+  cursor: pointer;
+}
+.saved-passwords > div > span {
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  background-color: #6931eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+
+
+.password-strength-container {
+    margin: 15px 0;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.strength-progress {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.strength-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.delete-all-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.delete-all-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.delete-all-btn:hover {
+    background: #ff3742;
+}
+
+.delete-all-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
